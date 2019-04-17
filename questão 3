@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void convert (int second) {
+
+    hora int, min, seg, min_max;
+
+    if (segundo> = 60 e segundo <3600) {
+        
+        min = segundo / 60;
+        printf ("% d", min);
+        
+    } else if (segundo> = 3600) {
+        
+        hora = segundo / 3600;
+        min_max = segundo% 3600;
+        min = min_max / 60;
+        seg = min_max% 60;
+        
+        printf ("% dh% dmin% dseg", hora, min, seg);
+        
+    }outro
+    
+    printf ("% d", segundo);
+    
+    return 0;
+}
+
+int main ()
+{
+
+        int segundo;
+        
+        printf ("Entre com os segundos a serem convertidos:");
+        scanf ("% d" e segundo);
+        converter (segundo);
+}
